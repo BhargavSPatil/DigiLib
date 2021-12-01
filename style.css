@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    height: 10vh;
+    margin: auto;
+}
+
+.logo-container, .nav-links, .search-user{
+    display: flex;
+}
+
+.logo-container, .nav-links{
+    background-color: rgb(240, 240, 240);
+}
+
+.logo-container{
+    width: 8%;
+    align-items: center;
+}
+
+.nav-links{
+    width: 61.8%;
+    font-size: 27px;
+}
+
+.nav-links{
+    list-style: none;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.nav-link{
+    font-size: 20px;
+    text-align: center;
+    padding: 12px;
+}
+
+#home, #categories, #card, #blog, #contact{
+    text-decoration: none;
+}
+
+.search-user{
+    width: 30.2%;
+    min-width: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(87, 19, 150);
+}
+
+
+#user-dp{
+    border-radius: 30px;
+}
+
+.adiv{
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh;
+    
+}
+
+.nav-link:hover{
+    background-color: rgb(213, 216, 213);
+    border-radius: 8px;
+}
+
+.lactive{
+    background-color: rgb(3, 139, 10);
+    border-radius: 8px;
+    color: white;
+}
+
+#myCarousel{
+    height: 38vw;
+}
+
+.carousel-indicators li{
+    border-radius: 0 !important;
+    height: 0.4rem !important;
+    width: 3em !important;
+}
+
+.carousel-inner{
+    height: 100%;
+}
+
+.item{
+    height: 100%;
+}
+
+.car-flex{
+    height: 100%;
+    display: flex;
+}
+
+.empty{
+    height: 100%;
+    width: 8%;
+    background-color: rgb(240, 240, 240);
+}
+
+.cont{
+    height: 100%;
+    width: 61.8%;
+    background-color: rgb(240, 240, 240);
+}
+
+.xyz{
+    height: 100%;
+    width: 30.2%;
+    background-color: rgb(87, 19, 150);    
+}
+
+#larrow, #rarrow{
+    background: none;
+    width: 7% !important;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+.intro{
+    display: flex;
+    height: 40vw;
+    padding: 5%;
+    padding-right: 0;
+}
+
+.intro-text{
+    flex: 5;
+}
+
+.anime{
+    flex: 4;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    line-height: 100%;
+}
+svg{
+    height: 100%;
+}
+
+#meditate{
+    animation: up-down 1s ease-in-out infinite alternate;
+}
+
+@keyframes up-down{
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(20px);
+    }
+}
+
+.quotes{
+    display: flex;
+    height: 30vw;
+}
+
+.thumbs-up{
+    flex: 1;
+    overflow: hidden;
+    padding: 2%;
+}
+
+.thumbs-up img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.quote{
+    flex: 2;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 7vw;
+    background-color: aquamarine;
+    font-size: calc(8px + 1vw);                                /**/
+}
+
+.media{
+    width: 100%;
+    text-align: center;
+}
+
+.media a{
+    text-decoration: none;
+}
+
+.icons{
+    margin-right: 1%;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
