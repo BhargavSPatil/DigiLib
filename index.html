@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="style.css">
     <title>digiLib | Home</title>
 </head>
@@ -16,31 +16,53 @@
     
     <header>
         <div class="logo-container">
-            <img src="#" alt="logo">
-            <h4 class="logo">digiLib</h4>
+            <div class="logo-img">
+                <img class="logo" src="#" alt="logo">
+            </div>
+            <div class="logo-text-div">
+                <h4 class="logo-text">digiLib</h4>
+            </div>
         </div>
 
         <div class="nav-links">
-                <div class="adiv"><a href="./index.html" class="nav-link lactive" id="home">Home</a></div>
-                <div class="adiv"><a href="./categories.html" class="nav-link" id="categories">Categories<span class="caret"></span></a></div>
-                <div class="adiv"><a href="./digilibcard.html" class="nav-link" id="card">Library Card</a></div>
-                <div class="adiv"><a href="./blog.html" class="nav-link" id="blog">Blog</a></div>
-                <div class="adiv"><a href="./contact.html" class="nav-link" id="contact">Contact</a></div>
+            <div class="adiv"><a href="./index.html" class="nav-link lactive" id="home">Home</a></div>
+            <div class="adiv">
+                <div class="dropdown">
+                    <a href="./categories.html" class="nav-link" id="categories">
+                    Categories<span class="caret"></span></a>
+                    <div class="drp-dwn">
+                        <div class="drp-dwn-clm">
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Mathematics</a></li>
+                                <li><a href="#">Physics</a></li>
+                                <li><a href="#">Chemistry</a></li>
+                                <li><a href="#">Biology</a></li>
+                                <li><a href="#">Comics</a></li>
+                                <li><a href="#">Computer Science</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="adiv"><a href="./digilibcard.html" class="nav-link" id="card">Library Card</a></div>
+            <div class="adiv"><a href="./blog.html" class="nav-link" id="blog">Blog</a></div>
+            <div class="adiv"><a href="./contact.html" class="nav-link" id="contact">Contact</a></div>
         </div>
 
-        <div class="search-user">            
+        <div class="search-user">
             <li>
                 <button class="btn btn-default">
-                    <span class="glyphicon glyphicon-search"></span> Search
+                    &nbsp;Sign-in &nbsp;
                 </button>
             </li>
             <li>
-                <button class="btn btn-default">
-                    <span class="glyphicon glyphicon-star-empty"></span> Favourite
-                </button>
+                <button class="btn btn-default">Sign-up</button>
             </li>
             <li>
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="user-dp"><span class="glyphicon glyphicon-user"></span></button> 
+                <button class="btn btn-primary" id="subscribe-btn" type="button">
+                    <span class="glyphicon glyphicon-user" id="user-dp"></span>
+                </button> 
             </li>
         </div>
 
@@ -55,20 +77,54 @@
         <div class="carousel-inner">
             <div class="item active" id="item1">
                 <div class="car-flex">
-                    <div class="empty"></div>
+                    <div class="empty1"></div>
                     <div class="cont">
-                        <h1>Welcome To Our Website</h1>
+                        <h1 class="top-line">GET THE BOOKS YOU NEED WITH A CLICK OF A BUTTON</h1>
+                        <div class="input-group search">
+                            <input type="text" class="form-control search-inp" placeholder="Book name, author....">
+                            <span class="input-group-btn search-span">
+                                <button class="btn btn-default search-btn" type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>&nbsp; Search                                    
+                                </button>
+                            </span>
+                        </div>
                     </div>
-                    <div class="xyz"></div>
+                    <div class="empty2"></div>
+                    <img src="./images/carousel-1.jpg" class="carousel-img" alt="">
+                    <div class="xyz">
+                        <span class="emoji1">&#128525;</span>
+                        <span class="emoji2">&#11088;</span>
+                        <span class="emoji3">&#9889;</span>
+                        <div class="arc">
+                            <div class="semi-circle"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item" id="item2">
                 <div class="car-flex">
-                    <div class="empty"></div>
+                    <div class="empty1"></div>
                     <div class="cont">
-                        <h1>Hello</h1>
+                        <h1 class="top-line">GET THE BOOKS YOU NEED WITH A CLICK OF A BUTTON</h1>
+                        <div class="input-group search">
+                            <input type="text" class="form-control search-inp" placeholder="Book name, author....">
+                            <span class="input-group-btn search-span">
+                                <button class="btn btn-default search-btn" type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>&nbsp; Search                                    
+                                </button>
+                            </span>
+                        </div>
+                    </div>      
+                    <div class="empty2"></div>              
+                    <img src="./images/carousel-2.jpg" class="carousel-img" alt="">
+                    <div class="xyz">
+                        <span class="emoji1">&#127752;</span>
+                        <span class="emoji2">&#127881;</span>
+                        <span class="emoji3">&#127919;</span>
+                        <div class="arc">
+                            <div class="semi-circle"></div>
+                        </div>
                     </div>
-                    <div class="xyz"></div>
                 </div>
             </div>
         </div>
@@ -84,8 +140,8 @@
 
 
     <div class="intro">
-        <div class="intro-text">
-
+        <div class="top-line" id="intro-text">
+            I DO NOT WANT TO <br> JUST READ BOOKS. <br> I WANT TO CLIMB INSIDE <br> THEM AND LIVE THERE
         </div>
 
         <div class="anime">
@@ -114,17 +170,29 @@
     </div>
 
     <div class="quotes">
-        <div class="thumbs-up"><img src="./images/thumpsUp.jpg" alt=""></div>
-        <div class="quote"></div>
+        <div class="thumbs-up"><img src="./images/thumpsUp.png" alt=""></div>
+        <div class="top-line quote">A BOOK IS A GIFT <br> WHICH YOU CAN OPEN <br> AGAIN AND AGAIN</div>
     </div>
+
+
+    <div class="join-us">
+        <div class="top-line join-us-text">
+            COME JOIN US AND <br> BECOME ONE OF US <br>
+            <a class="join-us-btn" href="./digilibcard.html" id="join-btn">Join Us</a>
+        </div>
+        <div class="group-study"><img src="./images/group-study.jpg" alt=""></div>
+    </div>
+
 
     <div class="footer">
         <div class="media">
-            Follow Us On: &nbsp;&nbsp;
+            Follow Us On:
             <a href="#" class="fab fa-facebook icons"></a>
             <a href="#" class="fab fa-twitter icons"></a>
             <a href="#" class="fab fa-youtube icons"></a>
             <a href="#" class="fab fa-instagram icons"></a>
+            <a href="#" class="fab fa-linkedin icons"></a>
+            <a href="#" class="fab fa-discord icons"></a>
         </div>
         <div class="copyright">Copyright &copy; All Rights Reserved</div>
     </div>

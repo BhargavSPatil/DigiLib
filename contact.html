@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="style.css">
     <title>digiLib | Contact</title>
 </head>
@@ -20,7 +21,25 @@
 
         <div class="nav-links">
                 <div class="adiv"><a href="./index.html" class="nav-link" id="home">Home</a></div>
-                <div class="adiv"><a href="./categories.html" class="nav-link" id="categories">Categories<span class="caret"></span></a></div>
+                <div class="adiv">
+                    <div class="dropdown">
+                        <a href="./categories.html" class="nav-link" id="categories">
+                        Categories<span class="caret"></span></a>
+                        <div class="drp-dwn">
+                            <div class="drp-dwn-clm">
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Mathematics</a></li>
+                                    <li><a href="#">Physics</a></li>
+                                    <li><a href="#">Chemistry</a></li>
+                                    <li><a href="#">Biology</a></li>
+                                    <li><a href="#">Comics</a></li>
+                                    <li><a href="#">Computer Science</a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="adiv"><a href="./digilibcard.html" class="nav-link" id="card">Library Card</a></div>
                 <div class="adiv"><a href="./blog.html" class="nav-link" id="blog">Blog</a></div>
                 <div class="adiv"><a href="./contact.html" class="nav-link lactive" id="contact">Contact</a></div>
@@ -40,8 +59,59 @@
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="user-dp"><span class="glyphicon glyphicon-user"></span></button> 
             </li>
         </div>
-
     
     </header>
+
+    <div class="contact-page">
+        <div class="empty5"></div>        
+        <div id="contact-info">
+            <div id="contact-txt">Contact</div>
+            <div class="contact-form">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="name" class="contact-details">Name:</label>
+                        <input type="text" class="form-control data" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="contact-details">Email Address</label>
+                        <input type="text" class="form-control data" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="number" class="contact-details">Mobile No.</label>
+                        <input type="text" class="form-control data" placeholder="Mobile no.">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment" class="contact-details">Comment</label><br>
+                        <textarea class="data" cols="47" rows="6"></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="empty6"></div>
+    </div>
+
+    <div class="map-addr">
+        <div class="empty3"></div>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.497292780528!2d77.56524017841791!3d12.939999039474099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!
+        4f13.1!3m3!1m2!1s0x3bae158b11e34d2f%3A0x5f4adbdbab8bd80f!2sBMS%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1630410735231!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy"></iframe>
+        <div class="empty4"></div>
+    </div>
+
+    <div class="footer">
+        <div class="media">
+            Follow Us On:
+            <a href="#" class="fab fa-facebook icons"></a>
+            <a href="#" class="fab fa-twitter icons"></a>
+            <a href="#" class="fab fa-youtube icons"></a>
+            <a href="#" class="fab fa-instagram icons"></a>
+            <a href="#" class="fab fa-linkedin icons"></a>
+            <a href="#" class="fab fa-discord icons"></a>
+        </div>
+        <div class="copyright">Copyright &copy; All Rights Reserved</div>
+    </div>
 </body>
 </html>
