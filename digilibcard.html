@@ -8,105 +8,126 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon (1).ico">
     <link rel="stylesheet" href="style.css">
     <title>digiLib | Library Card</title>
 </head>
-<body>
-    <header>
-        <div class="logo-container">
-            <img src="#" alt="logo">
-            <h4 class="logo">digiLib</h4>
-        </div>
 
-        <div class="nav-links">
-                <div class="adiv"><a href="./index.html" class="nav-link" id="home">Home</a></div>
-                <div class="adiv">
-                    <div class="dropdown">
-                        <a href="./categories.html" class="nav-link" id="categories">
-                        Categories<span class="caret"></span></a>
-                        <div class="drp-dwn">
-                            <div class="drp-dwn-clm">
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Mathematics</a></li>
-                                    <li><a href="#">Physics</a></li>
-                                    <li><a href="#">Chemistry</a></li>
-                                    <li><a href="#">Biology</a></li>
-                                    <li><a href="#">Comics</a></li>
-                                    <li><a href="#">Computer Science</a></li>
-                                    <li><a href="#"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="adiv"><a href="./digilibcard.html" class="nav-link lactive" id="card">Library Card</a></div>
-                <div class="adiv"><a href="./blog.html" class="nav-link" id="blog">Blog</a></div>
-                <div class="adiv"><a href="./contact.html" class="nav-link" id="contact">Contact</a></div>
-        </div>
+<style>
+  body{
+    background-image: url(./images/lib_card_back.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+</style>
 
-        <div class="search-user">            
-            <li>
-                <button class="btn btn-default">
-                    <span class="glyphicon glyphicon-search"></span> Search
-                </button>
-            </li>
-            <li>
-                <button class="btn btn-default">
-                    <span class="glyphicon glyphicon-star-empty"></span> Favourite
-                </button>
-            <li>
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="user-dp"><span class="glyphicon glyphicon-user"></span></button> 
-            </li>
-        </div>
+<body id="lib_card_body">
+  <header>
+      <div class="logo-container">
+          <img src="#" alt="logo">
+          <h4 class="logo">digiLib</h4>
+      </div>
 
-    
-    </header>
+      <div class="nav-links">
+              <div class="adiv"><a href="./index.html" class="nav-link" id="home">Home</a></div>
+              <div class="adiv">
+                  <div class="dropdown">
+                      <a href="./categories.html" class="nav-link" id="categories">
+                      Categories<span class="caret"></span></a>
+                      <div class="drp-dwn">
+                          <div class="drp-dwn-clm">
+                              <ul class="dropdown-menu">
+                                  <li><a href="#">Mathematics</a></li>
+                                  <li><a href="#">Physics</a></li>
+                                  <li><a href="#">Chemistry</a></li>
+                                  <li><a href="#">Biology</a></li>
+                                  <li><a href="#">Comics</a></li>
+                                  <li><a href="#">Computer Science</a></li>
+                                  <li><a href="#"></a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="adiv"><a href="./digilibcard.html" class="nav-link lactive" id="card">Library Card</a></div>
+              <div class="adiv"><a href="./blog.html" class="nav-link" id="blog">Blog</a></div>
+              <div class="adiv"><a href="./contact.html" class="nav-link" id="contact">Contact</a></div>
+      </div>
 
-    <div class="login-wrapper">
-        <form action="" class="form">
-          <img src="img/avatar.png" alt="">
-          <h2>SIGN UP</h2>
-          <div class="input-group">
-            <input type="text" name="loginUser" id="loginUser" required>
-            <label for="loginUser">User Name</label>
-          </div>
-          <div class="input-group">
-            <input type="email" name="loginUser" id="loginUser" required>
-            <label for="loginUser">Email Id</label>
-          </div>
-          <div class="input-group">
-            <input type="number" name="loginUser" id="loginUser" required>
-            <label for="loginUser">Phone number</label>
-          </div>
-          <div class="input-group">
-            <input type="password" name="loginPassword" id="loginPassword" required>
-            <label for="loginPassword">Password</label>
-          </div>
-          <div class="input-group">
-            <input type="password" name="loginPassword" id="loginPassword" required>
-            <label for="loginPassword">Confirm Password</label>
-          </div>
-          <input type="submit" value="Sign-up" class="submit-btn" >
-    
-          <p>Do you already have an account?</p>
-          <p>Click on Login.</p>
-          <input type="submit" value="Login" class="submit-btn">
-          
-          <a href="#forgot-pw" class="forgot-pw">Forgot Password?</a>
-        </form>
-    
-        <div id="forgot-pw">
-          <form action="" class="form">
-            <a href="#" class="close">&times;</a>
+      <div class="search-user">            
+          <li>
+              <button class="btn btn-default">
+                  <span class="glyphicon glyphicon-search"></span> Search
+              </button>
+          </li>
+          <li>
+              <button class="btn btn-default">
+                  <span class="glyphicon glyphicon-star-empty"></span> Favourite
+              </button>
+          <li>
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="user-dp"><span class="glyphicon glyphicon-user"></span></button> 
+          </li>
+      </div>
+
+  
+  </header>
+
+  <div class="login-wrapper">
+    <form action="" class="form">
+      <h2>SIGN UP</h2>
+      <div class="input-group">
+        <input type="text" name="loginUser" id="loginUser" required>
+        <label for="loginUser">User Name</label>
+      </div>
+      <div class="input-group">
+        <input type="email" name="loginUser" id="loginUser" required>
+        <label for="loginUser">Email Id</label>
+      </div>
+      <div class="input-group">
+        <input type="number" name="loginUser" id="loginUser" required>
+        <label for="loginUser">Phone number</label>
+      </div>
+      <div class="input-group">
+        <input type="password" name="loginPassword" id="loginPassword" required>
+        <label for="loginPassword">Password</label>
+      </div>
+      <div class="input-group">
+        <input type="password" name="loginPassword" id="loginPassword" required>
+        <label for="loginPassword">Confirm Password</label>
+      </div>
+      <input type="submit" value="Sign-up" class="submit-btn log_sign">
+
+      <p>Do you already have an account?</p>
+      <p>Click on Login.</p>
+      <input type="submit" value="Login" class="submit-btn log_sign">
+      
+      <a href="#forgot-pw" class="forgot-pw" data-toggle="modal" data-target="#forgot-pw">Forgot Password?</a>
+    </form>
+  
+    <div class="modal fade" id="forgot-pw">
+      <div class="modal-dialog" id="modal-box">
+        <form action="" class="form" id="frgt">
+          <div class="modal-header">
+            <a href="#" class="close" data-dismiss="modal">&times;</a>
             <h2>Reset Password</h2>
+          </div>
+          <div class="modal-body" id="modal-body ">
             <div class="input-group">
               <input type="email" name="email" id="email" required>
               <label for="email">Email</label>
             </div>
-            <input type="submit" value="Submit" class="submit-btn">
-          </form>
-        </div>
+            <div class="input-group">
+              <input type="text" name="name" id="" required>
+              <label for="email">Favourite Book</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <input type="submit" value="Submit" class="submit-btn log_sign">
+          </div>
+        </form>
       </div>
+    </div>
+  </div>
 
     
 </body>
