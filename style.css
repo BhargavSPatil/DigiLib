@@ -207,7 +207,8 @@ header{
 }
 
 .top-line{
-    font-size: 4vw;
+    font-size: 60px;
+    font-family: "Lobster";
 }
 
 
@@ -385,6 +386,7 @@ svg{
     color: white;
     padding-top: 7%;
     padding-left: 8%;
+    font-size: 4vw;
 }
 
 .join-us-btn{
