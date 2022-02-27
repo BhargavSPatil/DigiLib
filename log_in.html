@@ -13,6 +13,16 @@
     <link rel="stylesheet" href="style.css">
     <title>digiLib | Library Card</title>
 </head>
+
+<style>
+  body{
+    background-image: url(./images/lib_card_back.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+</style>
+
+
 <body id="lib_card_body">
     <header>
       <div class="logo-container">
@@ -97,14 +107,39 @@
           <input type="password" name="loginPassword" id="loginPassword" required>
           <label for="loginPassword">Password</label>
         </div>
+        <a href="#forgot-pw" class="forgot-pw" data-toggle="modal" data-target="#forgot-pw">Forgot Password?</a> <br><br>
         <input type="submit" value="Log-in" class="submit-btn log_sign">
-        <a href="#forgot-pw" class="forgot-pw" data-toggle="modal" data-target="#forgot-pw">Forgot Password?</a>
+        
   
         <p id="frgt-log">Don't have an account?</p>
         <p>Click on Sign-Up.</p>
         <input type="submit" value="Sign-Up" class="submit-btn log_sign">
         
       </form>
+    </div>
+
+    <div class="modal fade" id="forgot-pw">
+      <div class="modal-dialog" id="modal-box">
+        <form action="" class="form" id="frgt">
+          <div class="modal-header">
+            <a href="#" class="close" data-dismiss="modal">&times;</a>
+            <h2>Reset Password</h2>
+          </div>
+          <div class="modal-body" id="modal-body ">
+            <div class="input-group">
+              <input type="email" name="email" id="email" required>
+              <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+              <input type="text" name="name" id="" required>
+              <label for="email">Favourite Book</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <input type="submit" value="Submit" class="submit-btn log_sign">
+          </div>
+        </form>
+      </div>
     </div>
   
     <div class="footer">
