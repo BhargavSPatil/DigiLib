@@ -58,10 +58,28 @@
             </li>
             <li>
                 <button class="btn btn-default">
-                    <span class="glyphicon glyphicon-star-empty"></span> Favourite
+                    <span class="glyphicon glyphicon-star-empty"></span> Favourites
                 </button>
+            </li>
             <li>
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="user-dp"><span class="glyphicon glyphicon-user"></span></button> 
+                <div class="dropdown">
+
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="subscribe-btn" type="button">
+                        <span class="glyphicon glyphicon-user" id="user-dp"></span>
+                    </button>                    
+        
+                    <ul class="dropdown-menu" id="user-drpdwn">
+                        <li class="dropdown-header"></li>
+                        <li><a href="#">Your Account <span class="glyphicon glyphicon-user"></span></a></li>
+                        <li><a href="#">Downloads &nbsp;<span class="glyphicon glyphicon-download-alt"></span></a></li>
+                        <li class="disabled"><a href="#">Option 3</a></li>
+                        <li><a href="#">Notifications <span class="glyphicon glyphicon-bell"></span></a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header"></li>
+                        <li><a href="#">Log Out &nbsp; <span class="glyphicon glyphicon-log-out"></span></a></li>
+                        <li><a href="#">Option 6</a></li>
+                    </ul>
+                </div>
             </li>
         </div>
     

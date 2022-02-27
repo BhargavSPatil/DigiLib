@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon (1).ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>digiLib | Library Card</title>
+</head>
+<body id="lib_card_body">
+    <header>
+      <div class="logo-container">
+        <div class="logo-img">
+            <img class="logo" src="./images/logo_grad blue.png" alt="logo">
+        </div>
+        <div class="logo-text-div">
+            <h4 class="logo-text"><a href="./index.html">digiLib</a></h4>
+        </div>
+      </div>
+  
+      <div class="nav-links">
+              <div class="adiv"><a href="./index.html" class="nav-link" id="home">Home</a></div>
+              <div class="adiv">
+                  <div class="dropdown">
+                      <a href="./categories.html" class="nav-link" id="categories">
+                      Categories<span class="caret"></span></a>
+                      <div class="drp-dwn">
+                          <div class="drp-dwn-clm">
+                              <ul class="dropdown-menu">
+                                <li><a href="./categories.html#maths">Mathematics</a></li>
+                                <li><a href="./categories.html#physics">Physics</a></li>
+                                <li><a href="./categories.html#chemistry">Chemistry</a></li>
+                                <li><a href="./categories.html#biology">Biology</a></li>
+                                <li><a href="./categories.html#comics">Comics</a></li>
+                                <li><a href="./categories.html#cs">Computer Science</a></li>
+                                <li><a href="./categories.html#civil">Civil Engineering</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="adiv"><a href="./digilibcard.html" class="nav-link lactive" id="card">Library Card</a></div>
+              <div class="adiv"><a href="./blog.html" class="nav-link" id="blog">Blog</a></div>
+              <div class="adiv"><a href="./contact.html" class="nav-link" id="contact">Contact</a></div>
+      </div>
+  
+      <div class="search-user">            
+          <li>
+            <button class="btn btn-default">
+                <span class="glyphicon glyphicon-search"></span> Search
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-default">
+                <span class="glyphicon glyphicon-star-empty"></span> Favourites
+            </button>
+          </li>
+          <li>
+            <div class="dropdown">
+  
+              <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="subscribe-btn" type="button">
+                  <span class="glyphicon glyphicon-user" id="user-dp"></span>
+              </button>                    
+  
+              <ul class="dropdown-menu" id="user-drpdwn">
+                  <li class="dropdown-header"></li>
+                  <li><a href="#">Your Account <span class="glyphicon glyphicon-user"></span></a></li>
+                  <li><a href="#">Downloads &nbsp;<span class="glyphicon glyphicon-download-alt"></span></a></li>
+                  <li class="disabled"><a href="#">Option 3</a></li>
+                  <li><a href="#">Notifications <span class="glyphicon glyphicon-bell"></span></a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header"></li>
+                  <li><a href="#">Log Out &nbsp; <span class="glyphicon glyphicon-log-out"></span></a></li>
+                  <li><a href="#">Option 6</a></li>
+              </ul>
+          </div> 
+          </li>
+      </div>
+  
+    
+    </header>
+  
+    <div class="login-wrapper">
+      <form action="" class="form">
+        <h2>SIGN IN</h2>
+        <div class="input-group">
+          <input type="email" name="loginUser" id="loginUser" required>
+          <label for="loginUser">Email Id</label>
+        </div>
+        <div class="input-group">
+          <input type="password" name="loginPassword" id="loginPassword" required>
+          <label for="loginPassword">Password</label>
+        </div>
+        <input type="submit" value="Log-in" class="submit-btn log_sign">
+        <a href="#forgot-pw" class="forgot-pw" data-toggle="modal" data-target="#forgot-pw">Forgot Password?</a>
+  
+        <p id="frgt-log">Don't have an account?</p>
+        <p>Click on Sign-Up.</p>
+        <input type="submit" value="Sign-Up" class="submit-btn log_sign">
+        
+      </form>
+    </div>
+  
+    <div class="footer">
+      <div class="media">
+          Follow Us On:
+          <a href="#" class="fab fa-facebook icons"></a>
+          <a href="#" class="fab fa-twitter icons"></a>
+          <a href="#" class="fab fa-youtube icons"></a>
+          <a href="#" class="fab fa-instagram icons"></a>
+          <a href="#" class="fab fa-linkedin icons"></a>
+          <a href="#" class="fab fa-discord icons"></a>
+      </div>
+      <div class="copyright">Copyright &copy; All Rights Reserved</div>
+  </div>
+  
+      
+</body>
+</html>

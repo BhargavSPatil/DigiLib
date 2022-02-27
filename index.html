@@ -57,29 +57,31 @@
 
         <div class="search-user">
             <li>
-                <button class="btn btn-default">
+                <a class="btn btn-default" href="./log_in.html">
                     &nbsp;Sign-in &nbsp;
-                </button>
+                </a>
             </li>
             <li>
-                <button class="btn btn-default">Sign-up</button>
+                <a class="btn btn-default" href="./digilibcard.html">Sign-up</a>
             </li>
             <li>
-                <button class="btn btn-primary" id="subscribe-btn" type="button">
-                    <span class="glyphicon glyphicon-user" id="user-dp"></span>
-                </button> 
-                <div class="drp-dwn">
-                    <div class="drp-dwn-clm">
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Mathematics</a></li>
-                            <li><a href="#">Physics</a></li>
-                            <li><a href="#">Chemistry</a></li>
-                            <li><a href="#">Biology</a></li>
-                            <li><a href="#">Comics</a></li>
-                            <li><a href="#">Computer Science</a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
-                    </div>
+                <div class="dropdown">
+
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="subscribe-btn" type="button">
+                        <span class="glyphicon glyphicon-user" id="user-dp"></span>
+                    </button>                    
+        
+                    <ul class="dropdown-menu" id="user-drpdwn">
+                        <li class="dropdown-header"></li>
+                        <li><a href="#">Your Account <span class="glyphicon glyphicon-user"></span></a></li>
+                        <li><a href="#">Downloads &nbsp;<span class="glyphicon glyphicon-download-alt"></span></a></li>
+                        <li class="disabled"><a href="#">Option 3</a></li>
+                        <li><a href="#">Notifications <span class="glyphicon glyphicon-bell"></span></a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header"></li>
+                        <li><a href="#">Log Out &nbsp; <span class="glyphicon glyphicon-log-out"></span></a></li>
+                        <li><a href="#">Option 6</a></li>
+                    </ul>
                 </div>
             </li>
         </div>
@@ -134,7 +136,7 @@
                         </div>
                     </div>      
                     <div class="empty2"></div>              
-                    <img src="./images/carousel-2.jpg" class="carousel-img" alt="">
+                    <img src="./images/carousel-21.jpg" class="carousel-img" alt="">
                     <div class="xyz">
                         <span class="emoji1">&#127752;</span>
                         <span class="emoji2">&#127881;</span>
@@ -154,10 +156,10 @@
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         </a>
     </div>
+    
 
 
-
-    <div class="intro">
+    <!-- <div class="intro">
         <div class="top-line" id="intro-text">
             I DO NOT WANT TO JUST READ <br> BOOKS. I WANT TO CLIMB <br> INSIDE THEM AND LIVE THERE
         </div>
@@ -185,11 +187,50 @@
                 
                 
         </div>
+    </div> -->
+
+    <h1 class="cat-name" id="civil">Most Popular</h1>
+
+    <div class="books-slider">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href=""><img src="./images/img1.webp" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="./images/img2.webp" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="./images/img3.webp" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="./images/img4.webp" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="./images/img5.webp" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="./images/img6.webp" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="./images/img7.webp" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="./images/img8.webp" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="./images/img9.webp" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="./images/img10.webp" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="./images/img11.webp" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="./images/img12.webp" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="./images/img13.webp" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="./images/img14.webp" alt=""></a></div>
+            <div class="swiper-slide"><a href=""><img src="./images/img15.webp" alt=""></a></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <div class="book-numbers">
+        <div class="row">
+            <div class="col-lg-1 info"></div>
+            <div class="col-lg-2 info" align="center"><font size="10">101</font> <br> Spacecraft Missions</div>  
+            <div class="col-lg-2 info" align="center"><font size="10">72</font> <br> Launch Missions</div>
+            <div class="col-lg-2 info" align="center"><font size="10">9</font> <br> Student Satellites</div>
+            <div class="col-lg-2 info" align="center"><font size="10">2</font> <br> Re-entry Missions</div>
+            <div class="col-lg-2 info" align="center"><font size="10">269</font> <br> Foreign Satellites</div>
+            <div class="col-lg-1"></div>
+        </div>
     </div>
 
     <div class="quotes">
-        <div class="thumbs-up"><img src="./images/thumpsUp.png" alt=""></div>
-        <div class="top-line quote">A BOOK IS A GIFT <br> WHICH YOU CAN OPEN <br> AGAIN AND AGAIN</div>
+        <!-- <div class="thumbs-up"><img src="./images/thumpsUp.png" alt=""></div>
+        <div class="top-line quote">A BOOK IS A GIFT <br> WHICH YOU CAN OPEN <br> AGAIN AND AGAIN</div> -->
+        
     </div>
 
 
@@ -214,6 +255,20 @@
         </div>
         <div class="copyright">Copyright &copy; All Rights Reserved</div>
     </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 5,
+          spaceBetween: 10,
+          slidesPerGroup: 4,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
 
 
 </body>

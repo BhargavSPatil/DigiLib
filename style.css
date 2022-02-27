@@ -73,20 +73,20 @@ header{
     text-decoration: none;
 }
 
-.dropdown{
+.adiv .dropdown{
     display: inline;
 }
 
-.dropdown-menu a{
+.adiv .dropdown-menu a{
     display: block;
 }
 
-.dropdown:hover .dropdown-menu {
+.adiv .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 5%;
 }
 
-.drp-dwn{
+.adiv .drp-dwn{
     display: flex;
 }
 
@@ -110,6 +110,11 @@ header{
 #user-dp{
     vertical-align: middle;
     overflow: hidden;
+}
+
+#user-drpdwn{
+    top: 110%;
+    left: -210%;
 }
 
 .adiv{
@@ -367,7 +372,7 @@ svg{
 .quotes{
     display: flex;
     height: 30vw;
-    background-color: rgb(240, 240, 240);
+    background-color: white;
 }
 
 .thumbs-up{
@@ -386,6 +391,10 @@ svg{
     flex: 2;
     padding-top: 6%;
     padding-left: 10%;
+}
+
+.book-numbers{
+    padding: 2%;
 }
 
 .join-us{
@@ -465,14 +474,16 @@ svg{
 /*Categories Page*/
 
 .categories{
-    background-color: rgb(134, 25, 156);
+    background-color:white
 }
 
 .cat-name{
     padding-top: 2%;
-    color: white;
+    padding-left: 0.5%;
+    color:black;
     margin-bottom: 0;
     font-family: 'Spline Sans', sans-serif;
+    font-weight: bold; 
 }
 
 .books-slider{
@@ -494,7 +505,7 @@ height: 100%;
 background-color: rgb(0, 0, 0);
 text-align: center;
 font-size: 18px;
-background: rgb(134, 25, 156);
+background: white;
 
 /*Own*/
 transition: 250ms all;
@@ -514,8 +525,12 @@ justify-content: center;
 align-items: center;
 }
 
+.swiper-slide a img{
+    border-radius: 5px;
+}
+
 .swiper-slide:hover{
-    transform: scale(1.15);
+    transform: scale(1.1);
     z-index: 1;
 }
 
@@ -693,6 +708,10 @@ transition: 0.6s;
 width: 100%;
 margin: 0;
 background: #221e1e;
+}
+
+#frgt-log{
+    padding-top: 5%;
 }
 
 .modal-body{
