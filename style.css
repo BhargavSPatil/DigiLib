@@ -170,7 +170,7 @@ header{
     height: 100%;
     width: 41.8%;
     background-color: rgb(240, 240, 240);
-    padding-top: 8%;
+    padding-top: 2%;
 }
 
 .search{
@@ -179,7 +179,7 @@ header{
     width: 95%;
     height: 3vw;
     overflow: hidden !important;
-    margin-top: 7%;
+    margin-top: 3%;
 }
 
 .search-inp{
@@ -224,10 +224,28 @@ header{
 }
 
 .top-line{
-    font-size: 3.5vw;
-    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5vw;
+    font-family: 'Domine', serif;
+    font-style: italic;
+    font-weight: 100;
 }
 
+.e-lib{
+    font-size: 3.5vw;
+    font-family: 'Spectral', serif;
+    margin-bottom: 0;
+    margin-top: 10%;
+}
+
+.e-lib-under{
+    width: 10vw;
+    height: 0.5vw;
+    background-color: #0067B9;
+    margin-bottom: 15%;
+    border-radius: 4px;
+    margin-left: 1.2vw;
+    margin-top: 0;
+}
 
 .xyz{
     height: 100%;
@@ -399,6 +417,7 @@ svg{
     padding-top: 4%;
     padding-left: 1%;
     background-color: rgba(248, 248, 248, 0.774);
+    font-family: 'Martel Sans', sans-serif;
 }
 
 #popular-books{
@@ -428,6 +447,81 @@ svg{
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.603);
 }
 
+.subscription-offers{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2%;
+}
+
+.subscription{
+    background: linear-gradient(#E6EFF8, #B8D2EA);
+}
+
+.subscrb_h{
+    padding-top: 2%;
+    font-size: 3.8vw;
+    font-family: 'Martel Sans', sans-serif;
+    text-align: center;
+}
+
+.basic, .standard, .gold{
+    height: 33vw;
+    padding: 3.5%;
+    background-color: rgb(248, 248, 248);
+    border-radius: 3px;
+}
+
+.basic{
+    padding: 2%;
+    padding-top: 3.5%;
+}
+
+.plan_h{
+    font-size: 3vw;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.plan_underline{
+    height: 4px;
+    width: 2.5vw;
+    margin: auto;
+    margin-bottom: 5%;
+    background-color: #0182B3;
+    color: blue;
+}
+
+.money{
+    font-size: 3vw;
+    margin-bottom: 0;
+}
+
+.buy-plan{
+    padding: 4%;
+    width: 10vw;
+    background-color: #40B8D4;
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
+
+.basic .buy-plan{
+    margin-top: 5.3vw;
+}
+
+.standard .buy-plan, .gold .buy-plan{
+    margin-top: 3.4vw;
+}
+
+
+.features{
+    font-size: 1.1em;
+    text-align: left;
+    font-family: sans-serif;
+}
+
 .join-us{
     display: flex;
     background-color: rgb(87, 19, 150);
@@ -439,13 +533,14 @@ svg{
     padding-top: 7%;
     padding-left: 8%;
     font-size: 3.7vw;
+    font-family: 'Kanit', sans-serif;
 }
 
 .join-us-btn{
     font-size: calc(10px + 1.3vw);
     background: none;
     border: 1px solid black;
-    padding: 1%;
+    padding: 1% 2% 1% 2%;
     border-radius: 5px;
     background-color: rgb(14, 160, 14);
     cursor: pointer;
@@ -863,7 +958,7 @@ font-size: 0.9rem;
 }
 
 .log_in{
-    width: 5vw;
+    width: 90px;
     text-decoration: none;
     color: white;
     display: block;
@@ -874,7 +969,7 @@ font-size: 0.9rem;
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 10px 20px;
+    padding: 3% 2%;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 5%;
@@ -1039,7 +1134,7 @@ text-align: center;
 }
 
 .blog-bdy{
-    background-color: rgb(53, 171, 207);
+    background-color: rgb(226, 235, 238);
 }
 
 .blog-post{
@@ -1066,7 +1161,7 @@ text-align: center;
 /*Contact Page*/
 
 .cntct-page-body{
-    background-color: rgb(124, 205, 252);    
+    background-color: rgb(170, 213, 238);    
 }
 
 .container {
