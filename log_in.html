@@ -98,31 +98,37 @@
   
     <div class="login-wrapper">
       <form action="" class="form" id="loginForm">
-        <h2>SIGN IN</h2>
-        <div class="alert alert-success fade in" id="login-success">
-          <a href="#" class="close" data-dismiss="alert">&times;</a>
-          <strong>Successfully logged in!.</strong>
+        <div id="log-remove">
+          <h2>SIGN IN</h2>
+          <div class="alert alert-success fade in" id="login-success">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <strong>Successfully logged out!.</strong>
+          </div>
+          <div class="alert alert-danger fade in" id="login-error">                                   <!--fade in: helps to fade when the dismiss button is clicked-->
+            <a href="#" class="close" data-dismiss="alert">&times;</a>              <!--close class is helpful in removing the content we want. &times; is used to create a 'x' mark on the element.-->
+            <strong id="log-err-msg"></strong>
+          </div>
+          <div class="input-group">
+            <input type="text" name="loginUser" id="loginUser" placeholder=" " required>
+            <label for="loginUser">Email-id or UserName</label>
+          </div>
+          <div class="input-group">
+            <input type="password" name="loginPassword" id="loginPassword" placeholder=" " required>
+            <label for="loginPassword">Password</label>
+          </div>
+          <a href="#forgot-pw" class="forgot-pw" data-toggle="modal" data-target="#forgot-pw">Forgot Password?</a> <br><br>
+          <input type="submit" value="Log-in" class="submit-btn log_sign">
+          
+    
+          <p id="frgt-log">Don't have an account?</p>
+          <p>Click on Sign-Up.</p>
+          <a href="./digilibcard.html" class="btn submit-btn log_in">Sign-Up</a>
         </div>
-        <div class="alert alert-danger fade in" id="login-error">                                   <!--fade in: helps to fade when the dismiss button is clicked-->
-          <a href="#" class="close" data-dismiss="alert">&times;</a>              <!--close class is helpful in removing the content we want. &times; is used to create a 'x' mark on the element.-->
-          <strong id="log-err-msg"></strong>
+        <div class="login-invisible" id="log-success-name">
+          <img src="./images/tickmark.png" class="tick" alt="">
+          <h3></h3>
+          <button id="log-out-btn" class="submit-btn log_sign">Log-out</button>
         </div>
-        <div class="input-group">
-          <input type="text" name="loginUser" id="loginUser" placeholder=" " required>
-          <label for="loginUser">Email-id or UserName</label>
-        </div>
-        <div class="input-group">
-          <input type="password" name="loginPassword" id="loginPassword" placeholder=" " required>
-          <label for="loginPassword">Password</label>
-        </div>
-        <a href="#forgot-pw" class="forgot-pw" data-toggle="modal" data-target="#forgot-pw">Forgot Password?</a> <br><br>
-        <input type="submit" value="Log-in" class="submit-btn log_sign">
-        
-  
-        <p id="frgt-log">Don't have an account?</p>
-        <p>Click on Sign-Up.</p>
-        <a href="./digilibcard.html" class="btn submit-btn log_in">Sign-Up</a>
-        
       </form>
     </div>
 

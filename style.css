@@ -993,6 +993,24 @@ font-size: 0.9rem;
     color: white;
 }
 
+#log-success-name{
+    text-align: center;
+}
+
+.tick{
+    width: 15vw;
+    height: 15vw;
+}
+
+#log-success-name h3{
+    color: #ff652f;
+}
+
+#log-out-btn{
+    margin-top: 10%;
+    margin-left: 37%;
+}
+
 .forgot-pw {
 color: inherit;
 }
