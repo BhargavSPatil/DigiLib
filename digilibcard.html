@@ -95,28 +95,40 @@
   
   </header>
 
+  
+
   <div class="login-wrapper">
-    <form action="" class="form">
+
+    <form action="" class="form" id="signupForm">
+      
       <h2>SIGN UP</h2>
-      <div class="input-group">
-        <input type="text" name="loginUser" id="loginUser" required>
-        <label for="loginUser">User Name</label>
+      <div class="alert alert-success fade in" id="form-success">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>Success! Account Created.</strong>
+      </div>
+      <div class="alert alert-danger fade in" id="form-error">                                   <!--fade in: helps to fade when the dismiss button is clicked-->
+        <a href="#" class="close" data-dismiss="alert">&times;</a>              <!--close class is helpful in removing the content we want. &times; is used to create a 'x' mark on the element.-->
+        <strong id="err-msg"></strong>
       </div>
       <div class="input-group">
-        <input type="email" name="loginUser" id="loginUser" required>
-        <label for="loginUser">Email Id</label>
+        <input type="text" name="signupUser" id="signupUser" placeholder=" " required>
+        <label for="signupUser">User Name</label>
       </div>
       <div class="input-group">
-        <input type="number" name="loginUser" id="loginUser" required>
-        <label for="loginUser">Phone number</label>
+        <input type="email" name="signupEmail" id="signupEmail" placeholder=" " required>
+        <label for="signupUser">Email Id</label>
       </div>
       <div class="input-group">
-        <input type="password" name="loginPassword" id="loginPassword" required>
-        <label for="loginPassword">Password</label>
+        <input type="number" name="signupNumber" id="signupNumber" placeholder=" " required>
+        <label for="signupUser">Phone number</label>
       </div>
       <div class="input-group">
-        <input type="password" name="loginPassword" id="loginPassword" required>
-        <label for="loginPassword">Confirm Password</label>
+        <input type="password" name="signupPassword" id="signupPassword" placeholder=" " required>
+        <label for="signupPassword">Password</label>
+      </div>
+      <div class="input-group">
+        <input type="password" name="signupPassword" id="signupCPassword" placeholder=" " required>
+        <label for="signupPassword">Confirm Password</label>
       </div>
       <input type="submit" value="Sign-up" class="submit-btn log_sign">
 
@@ -124,32 +136,8 @@
       <p>Click on Login.</p>
       <a href="./log_in.html" class="btn submit-btn log_in">Login</a>
       
-      <a href="#forgot-pw" class="forgot-pw" data-toggle="modal" data-target="#forgot-pw">Forgot Password?</a>
     </form>
   
-    <div class="modal fade" id="forgot-pw">
-      <div class="modal-dialog" id="modal-box">
-        <form action="" class="form" id="frgt">
-          <div class="modal-header">
-            <a href="#" class="close" data-dismiss="modal">&times;</a>
-            <h2>Reset Password</h2>
-          </div>
-          <div class="modal-body" id="modal-body ">
-            <div class="input-group">
-              <input type="email" name="email" id="email" required>
-              <label for="email">Email</label>
-            </div>
-            <div class="input-group">
-              <input type="text" name="name" id="" required>
-              <label for="email">Favourite Book</label>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <input type="submit" value="Submit" class="submit-btn log_sign">
-          </div>
-        </form>
-      </div>
-    </div>
   </div>
 
   <div class="footer">
@@ -164,6 +152,8 @@
     </div>
     <div class="copyright">Copyright &copy; All Rights Reserved</div>
 </div>
+
+<script src="./script.js"></script>
 
     
 </body>

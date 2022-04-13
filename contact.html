@@ -92,8 +92,8 @@
         <div class="row">
             <div class="column">
                 <div class="team-6">
-                    <div class="team-img">
-                        <img src="./images/bha1e.jpg" alt="Team Image">
+                    <div class="team-img" id="bhargav-img">
+                        <img src="./images/bhargav.png" alt="Team Image">
                     </div>
                     <div class="team-content">
                         <h2>Bhargav S Patil</h2>
@@ -178,19 +178,19 @@
                     <form role="form">
                         <div class="form-group">
                             <label for="name" class="contact-details"><span class="content-name">Name</span></label>
-                            <input type="text" class="form-control data inp" placeholder="Enter Your Name Here">
+                            <input type="text" class="form-control data inp" placeholder="Enter Your Name Here" required>
                         </div>
                         <div class="form-group">
                             <label for="email" class="contact-details"><span class="content-name">Email Address</span></label>
-                            <input type="text" class="form-control data inp" placeholder="Enter Your Email ID">
+                            <input type="email" class="form-control data inp" placeholder="Enter Your Email ID" required>
                         </div>
                         <div class="form-group">
                             <label for="number" class="contact-details"><span class="content-name">Mobile No.</span></label>
-                            <input type="text" class="form-control data inp" placeholder="Enter Your Mobile no.">
+                            <input type="number" class="form-control data inp" placeholder="Enter Your Mobile no." required>
                         </div>
                         <div class="form-group">
                             <label for="comment" class="contact-details">Comment</label><br>
-                            <textarea class="data" cols="46" rows="6"></textarea>
+                            <textarea class="data" cols="46" rows="6" required></textarea>
                         </div>
                         <div class="form-submit">
                             <button type="submit" class="btn btn-success btn-lg">Submit</button>

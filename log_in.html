@@ -97,14 +97,22 @@
     </header>
   
     <div class="login-wrapper">
-      <form action="" class="form">
+      <form action="" class="form" id="loginForm">
         <h2>SIGN IN</h2>
-        <div class="input-group">
-          <input type="email" name="loginUser" id="loginUser" required>
-          <label for="loginUser">Email Id</label>
+        <div class="alert alert-success fade in" id="login-success">
+          <a href="#" class="close" data-dismiss="alert">&times;</a>
+          <strong>Successfully logged in!.</strong>
+        </div>
+        <div class="alert alert-danger fade in" id="login-error">                                   <!--fade in: helps to fade when the dismiss button is clicked-->
+          <a href="#" class="close" data-dismiss="alert">&times;</a>              <!--close class is helpful in removing the content we want. &times; is used to create a 'x' mark on the element.-->
+          <strong id="log-err-msg"></strong>
         </div>
         <div class="input-group">
-          <input type="password" name="loginPassword" id="loginPassword" required>
+          <input type="text" name="loginUser" id="loginUser" placeholder=" " required>
+          <label for="loginUser">Email-id or UserName</label>
+        </div>
+        <div class="input-group">
+          <input type="password" name="loginPassword" id="loginPassword" placeholder=" " required>
           <label for="loginPassword">Password</label>
         </div>
         <a href="#forgot-pw" class="forgot-pw" data-toggle="modal" data-target="#forgot-pw">Forgot Password?</a> <br><br>
@@ -127,12 +135,16 @@
           </div>
           <div class="modal-body" id="modal-body ">
             <div class="input-group">
-              <input type="email" name="email" id="email" required>
+              <input type="email" name="email" id="frgt-email" placeholder=" " required>
               <label for="email">Email</label>
             </div>
             <div class="input-group">
-              <input type="text" name="name" id="" required>
+              <input type="text" name="name" id="fav-book" placeholder=" " required>
               <label for="email">Favourite Book</label>
+            </div>
+            <div class="input-group">
+              <input type="password" name="newPassword" id="newPassword" placeholder=" " required>
+              <label for="frgtPassword">New Password</label>
             </div>
           </div>
           <div class="modal-footer">
@@ -154,6 +166,8 @@
       </div>
       <div class="copyright">Copyright &copy; All Rights Reserved</div>
   </div>
+
+  <script src="./script.js"></script>
   
       
 </body>

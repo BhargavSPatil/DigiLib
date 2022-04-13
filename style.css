@@ -912,6 +912,11 @@ letter-spacing: 1px;
 margin-bottom: 2rem;
 color: #ff652f;
 }
+
+#form-success, #form-error, #login-success, #login-error{
+    display: none;
+}
+
 .form .input-group {
 position: relative;
 }
@@ -937,11 +942,20 @@ pointer-events: none;
 transition: .3s ease-out;
 }
 .form .input-group input:focus + label,
-.form .input-group input:valid + label {
+.form .input-group input:valid + label,
+.form .input-group input:not(:placeholder-shown) + label {
 transform: translateY(-18px);
 color: #ff652f;
 font-size: 0.9rem;
 }
+
+#loginPassword, #loginCPassword {
+    color: white;
+}
+::-ms-reveal {
+    filter: invert(100%);
+}
+
 .log_sign {
     display: block;
     margin-left: auto;
@@ -989,6 +1003,10 @@ justify-content: center;
 width: 80%;
 }
 
+.login-invisible{
+    display: none;
+}
+
 /* #forgot-pw {
 display: flex;
 justify-content: center;
@@ -1025,7 +1043,7 @@ padding-top: 10%;
 height: 100%;
 opacity: 1;
 }
-.close {
+.modal-header .close {
 position: absolute;
 right: 1.5rem;
 top: 0.8rem;
@@ -1383,6 +1401,9 @@ text-align: center;
     background: #222222;
 }
 
+#bhargav-img{
+    background-color: rgba(79, 196, 255, 0.362);
+}
 
 .contact-page{
     height: 43vw;
